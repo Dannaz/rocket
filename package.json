@@ -14,12 +14,16 @@
   },
   "devDependencies": {
     "express": "^4.15.3",
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.6"
   },
+  "homepage": "https://dannaz.github.io/rocket",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
