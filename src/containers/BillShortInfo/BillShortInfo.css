@@ -1,0 +1,52 @@
+.bill-info:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bill-info {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    min-width: 440px;
+    color: #333333;
+    height: 191px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.bill-number {
+    margin-left: 40px;
+    font-size: 20px;
+}
+.bill-balance {
+    min-width: 400px;
+    margin-top: 13px;
+    margin-left: 40px;
+    font-size: 24px;
+    line-height: 0.83;
+}
+
+.bill-details {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #999999;
+}
+
+.operation-minus {
+    color: #de1c28;
+}
+
+.operation-plus {
+    color: #6ece1a;
+}
+
+.bill-info a {
+    margin-right: 40px;
+}
+
+.bill-info img {
+    width: 18px;
+    height: 18px;
+}

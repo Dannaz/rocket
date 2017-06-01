@@ -1,0 +1,18 @@
+[
+  {
+    "type": "text/operation",
+    "author": "me/client",
+    "date": "msg date",
+    "content": {
+      "text/id": "msgtext/operationid"
+    }
+  },
+  {
+    "type": "text/operation",
+    "author": "me/client",
+    "date": "msg date",
+    "content": {
+      "text/id": "msgtext/operationid"
+    }
+  }
+]

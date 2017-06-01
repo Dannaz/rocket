@@ -1,0 +1,36 @@
+.bill-operation {
+    /*max-width: 440px;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bill-operation:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.operation-information {
+    min-width: 340px;
+}
+
+.operation-date {
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #999999;
+}
+
+.send-operation {
+    width: 18px;
+    height: 18px;
+}
+
+.bill-operation-info {
+    font-size: 14px;
+    letter-spacing: normal;
+}

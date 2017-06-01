@@ -1,0 +1,25 @@
+.go-back {
+    width: 18px;
+    line-height: 18px;
+    margin-right: 40px;
+}
+
+.hist-title {
+    min-width: 400px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #999999;
+}
+
+.operations-container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    min-width: 440px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
