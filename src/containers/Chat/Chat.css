@@ -1,9 +1,0 @@
-.chat-container {
-    max-width: 894px;
-    min-width: 720px;
-    background-color: #f4f4f4;
-    border: solid 1px #e7e7e7;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}

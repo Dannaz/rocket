@@ -1,4 +1,0 @@
-export const SEND_MESSAGE = 'SEND_MESSAGE';
-export const MESSAGES_FETCH = 'MESSAGES_FETCH';
-export const MESSAGES_LOADED = 'MESSAGES_LOADED';
-
