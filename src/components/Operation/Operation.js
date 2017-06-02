@@ -26,14 +26,13 @@ class Operation extends Component {
     };
 
     render() {
-        console.log(this.props);
         return (
             <div className="bill-operation">
                 <div className="operation-information">
                     <div className="operation-date">{formattedDate(this.props.operationInfo.date)}</div>
                     <div className="bill-operation-info">{this.props.operationInfo.info} {transactionInfo(this.props.operationInfo)}</div>
                 </div>
-                <img className="send-operation" src="/img/send.png" onClick={this.handleClick}/>
+                <img className="send-operation" src="/img/send.png" alt="back" onClick={this.handleClick}/>
             </div>
         );
     }

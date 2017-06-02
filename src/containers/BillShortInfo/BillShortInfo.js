@@ -30,7 +30,7 @@ class BillShortInfo extends Component {
         return (
             <div className="bill-info">
                 <div className="bill-number">Счет № {this.props.billId}</div>
-                <Link to={`/bills/${this.props.billId}`}><img src="img/maximize.png"/></Link>
+                <Link to={`/bills/${this.props.billId}`}><img src="img/maximize.png" alt="open"/></Link>
                 <div className="bill-balance">{this.props.balance}</div>
                 <div className="bill-details">
                     <div >{this.props.percent} % годовых</div>

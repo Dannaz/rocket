@@ -22,7 +22,6 @@ class ChatInput extends Component {
         if (msgText.trim() !== '') {
             const message = this.createMessage(textArea.value);
             this.props.sendMessage(message);
-            console.log('---message', message);
         }
         textArea.value = '';
     };
@@ -30,7 +29,6 @@ class ChatInput extends Component {
     componentDidMount() {
         document.addEventListener('keydown', (e) => {
             if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
-                console.log('send:');
                 this.onSendMessage();
             }
         });

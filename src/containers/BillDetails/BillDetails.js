@@ -5,18 +5,19 @@ import {formattedDate} from '../../utils';
 import Operation from "../../components/Operation/Operation";
 import './BillDetails.css';
 import {browserHistory} from 'react-router';
-import {sendMessage} from '../../actions/messages'
+import {sendMessage} from '../../actions/messages';
+import { Link } from 'react-router';
 
 
 
 class BillDetails extends Component {
     renderOperation = (operation) => (
         <Operation
-            key={operation.date.valueOf()}
+            key={operation.operationId}
             operationInfo={operation}
             sendOperation={this.props.sendOperation}
             user={this.props.user}
-            />
+        />
     );
 
     render() {
@@ -25,13 +26,13 @@ class BillDetails extends Component {
             operations = this.props.operations.slice(0);
             operations.map((operation) => (operation.date = new Date(operation.date)));
         }
-        console.log(this.props);
-        console.log(operations);
         return (
             <div>
                 <div className="bill-info">
                     <div className="bill-number">Счет № {this.props.billId}</div>
-                    <span><img className="go-back" onClick={browserHistory.goBack} src="/img/close.png"/></span>
+                    <span>
+                        <Link to="/bills"><img className="go-back" src="/img/close.png" alt="close"/></Link>
+                    </span>
                     <div className="bill-balance">{this.props.balance}</div>
                     <div className="bill-details">
                         <div>{this.props.percent} % годовых</div>

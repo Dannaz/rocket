@@ -37,7 +37,6 @@ class DialogBox extends Component {
         }
 
         const {messages} = this.props;
-        console.log(messages);
         return (
             <div className="dialog_wraper">
                 <div className="dialog">
